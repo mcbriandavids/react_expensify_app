@@ -1,0 +1,13 @@
+:root {
+	--navLink: #f15025;
+	--font-family: Arial, Helvetica, sans-serif;
+}
+
+.Header {
+	display: flex;
+	flex: 1;
+	margin: 2rem;
+	padding: 1rem;
+	justify-content: space-evenly;
+	font-family: var(--font-family);
+}
