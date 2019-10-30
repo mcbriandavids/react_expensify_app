@@ -15,12 +15,6 @@ import { filterText } from './actions/Filters'
 
 const store = ConfigureStore()
 
-
- store.dispatch(addExpense({description:'Water Bill', amount:200, createdAt:'1000'}))
-  store.dispatch(addExpense({description:'Housing', amount:100, createdAt:'3000'}))
-  store.dispatch(addExpense({description:'Transportation', amount:600, createdAt:'5000'}))
-  store.dispatch(addExpense({description:'Education', amount:400, createdAt:'100'}))
-  
 store.subscribe(() => {
   const state = store.getState()
   const VisibilityExpense = VisibilitySelector(state.expenses, state.filters)
