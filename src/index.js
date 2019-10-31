@@ -1,5 +1,4 @@
 
-import './index.css';
 import React from 'react';
 import { Provider } from 'react-redux';
 import AppRouter from './Router/AppRouter';
@@ -14,6 +13,7 @@ import { filterText } from './actions/Filters'
 
 
 const store = ConfigureStore()
+
 
 store.subscribe(() => {
   const state = store.getState()

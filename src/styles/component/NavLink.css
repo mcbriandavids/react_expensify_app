@@ -1,7 +1,0 @@
-/* NavLinks */
-.is-active {
-	font-weight: bold;
-	color: var(--navLink);
-	text-decoration: none;
-	text-transform: uppercase;
-}

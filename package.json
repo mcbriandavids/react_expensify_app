@@ -4,8 +4,8 @@
 	"description": "babel and webpack config",
 	"main": "app.js",
 	"scripts": {
-		"start": "webpack-dev-server --mode development --open",
-		"build": "webpack-dev-server --mode production --open",
+		"start": "webpack-dev-server --open --watch --config webpack.dev.js",
+		"build": "webpack --open --config  webpack.prod.js",
 		"live": "live-server public",
 		"test": "jest"
 	},
@@ -16,6 +16,7 @@
 		"babel-cli": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
 		"babel-preset-react": "^6.24.1",
+		"clean-webpack-plugin": "^3.0.0",
 		"jest": "^24.9.0",
 		"live-server": "^1.2.1",
 		"moment": "^2.24.0",
@@ -29,7 +30,8 @@
 		"uuid": "^3.3.3",
 		"webpack": "^4.41.1",
 		"webpack-cli": "^3.3.9",
-		"webpack-dev-server": "^3.8.2"
+		"webpack-dev-server": "^3.8.2",
+		"webpack-merge": "^4.2.2"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.6.3",
